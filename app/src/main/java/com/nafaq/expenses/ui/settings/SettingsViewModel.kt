@@ -109,7 +109,10 @@ class SettingsViewModel(container: AppContainer) : ViewModel() {
                     putExtra(Intent.EXTRA_SUBJECT, "تقرير مصروفات نَفَق")
                     addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
                 }
-                context.startActivity(Intent.createChooser(intent, "تصدير المصروفات"))
+                context.startActivity(
+                    Intent.createChooser(intent, "تصدير المصروفات")
+                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                )
             }
             _message.value = "تم تجهيز ملف التصدير"
         }

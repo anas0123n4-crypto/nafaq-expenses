@@ -1,8 +1,9 @@
 package com.nafaq.expenses.ui.navigation
 
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.rounded.ChartPie
+import androidx.compose.material.icons.rounded.BarChart
 import androidx.compose.material.icons.rounded.Home
 import androidx.compose.material.icons.rounded.Search
 import androidx.compose.material.icons.rounded.Settings
@@ -36,7 +37,7 @@ private enum class Destination(
 ) {
     HOME("home", "الرئيسية", Icons.Rounded.Home),
     SEARCH("search", "البحث", Icons.Rounded.Search),
-    STATS("stats", "الإحصائيات", Icons.Rounded.ChartPie),
+    STATS("stats", "الإحصائيات", Icons.Rounded.BarChart),
     SETTINGS("settings", "الإعدادات", Icons.Rounded.Settings)
 }
 
